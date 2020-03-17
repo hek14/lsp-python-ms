@@ -430,7 +430,7 @@ other handlers. "
                                         (lambda () (f-exists? lsp-python-ms-executable)))
   :major-modes (append '(python-mode) lsp-python-ms-extra-major-modes)
   :server-id 'mspyls
-  :priority -2
+  :priority 1
   :initialization-options 'lsp-python-ms--extra-init-params
   :notification-handlers (lsp-ht ("python/languageServerStarted" 'lsp-python-ms--language-server-started-callback)
                                  ("telemetry/event" 'ignore)
